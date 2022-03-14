@@ -14,8 +14,9 @@ export default function Footer({icon,macaddress,type,title,description,data,hora
     const [date,setDate] = useState(data);
     const [hour,setHour] = useState(hora);
     const [load,setLoad] = useState(true);
-
+    console.log(process.env.REACT_APP_API_URL);
     async function New(){
+        alert("API " +  process.env.REACT_APP_API_URL)
         if(!type)
         return alert('DEFINA O TIPO DA TAREFA')
         if(!title)
