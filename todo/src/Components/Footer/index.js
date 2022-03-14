@@ -44,6 +44,7 @@ export default function Footer({icon,macaddress,type,title,description,data,hora
             navigation.navigate('Home'); 
          })
          .catch(()=>{
+             alert(api);
              alert('DATA OU HORA JÁ CADASTRADOS VERIFIQUE!');
          })
 
