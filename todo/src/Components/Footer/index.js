@@ -4,6 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 import api from '../../services/api';
 
    // id já está aqui
+   
 
 import styles from './styles';
 import add from '../../assets/add.png';
@@ -42,6 +43,7 @@ export default function Footer({icon,macaddress,type,title,description,data,hora
            })
            .then(()=>{
             navigation.navigate('Home'); 
+        
          })
          .catch(()=>{
              alert('DATA OU HORA JÁ CADASTRADOS VERIFIQUE!');
