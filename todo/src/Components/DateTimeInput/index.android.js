@@ -29,7 +29,7 @@ export default function DateTimeAndroid({type,save,icon,dt,hora,id,dh,when}){
             setShow(Platform.OS === 'ios');
             setDate(currentDate);
             setDados(`${currentDate.getHours() < 10 ? '0'+currentDate.getHours() : currentDate.getHours() }:${currentDate.getMinutes() < 10 ? '0'+currentDate.getMinutes():currentDate.getMinutes()}:00`);
-            save(`${(currentDate.getHours()+7) < 10 ? '0'+(currentDate.getHours()+7) : (currentDate.getHours()+7) }:${currentDate.getMinutes() < 10 ? '0'+currentDate.getMinutes():currentDate.getMinutes()}:00.000`);
+            save(`${(currentDate.getHours()) < 10 ? '0'+(currentDate.getHours()) : (currentDate.getHours()) }:${currentDate.getMinutes() < 10 ? '0'+currentDate.getMinutes():currentDate.getMinutes()}:00.000`);
             
         }
         
